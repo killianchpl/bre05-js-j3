@@ -66,14 +66,28 @@ function grid5() {
     divs[3].style.backgroundColor = "#956caf";
     divs[4].style.backgroundColor = "#e85b69";
     divs[5].style.backgroundColor = "#956caf";
-    divs[6].style.backgroundColor = "#020e13";
-    divs[7].style.backgroundColor = "#eca45c";
-    divs[8].style.backgroundColor = "#efec4f";
-    divs[9].style.backgroundColor = "#eca45c";
+    divs[6].style.backgroundColor = "#eca45c";
+    divs[7].style.backgroundColor = "#efec4f";
+    divs[8].style.backgroundColor = "#eca45c";
 }
 
 function grid6() {
-
+    let sections = document.querySelectorAll("section");
+    let divs = sections[5].querySelectorAll("div");
+    let degrades = [
+        "linear-gradient(#956caf, #427cf5)",
+        "linear-gradient(#956caf, #427cf5)",
+        "linear-gradient(#956caf, #427cf5)",
+        "linear-gradient(#4cee7e, #efec4f)",
+        "linear-gradient(#4cee7e, #efec4f)",
+        "linear-gradient(#4cee7e, #efec4f)",
+        "linear-gradient(#eca45c, #e85b69)",
+        "linear-gradient(#eca45c, #e85b69)",
+        "linear-gradient(#eca45c, #e85b69)"
+    ];
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].style.background = degrades[i];
+    }
 }
 
 grid1();
